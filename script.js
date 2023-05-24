@@ -1,4 +1,5 @@
 import { initialFacts, CATEGORIES } from "./data.js";
+import { apikey, authorization } from "./apikey.js";
 
 const btn = document.querySelector(".btn-open");
 const form = document.querySelector(".fact-form");
@@ -40,10 +41,8 @@ async function loadFacts() {
     "https://utxzikzxlhahsjndxzhw.supabase.co/rest/v1/facts",
     {
       headers: {
-        apikey:
-          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV0eHppa3p4bGhhaHNqbmR4emh3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODQ4NjEyMDQsImV4cCI6MjAwMDQzNzIwNH0.joLSoi3-dumg4eyu51wkGb08VMicXLALDHB5QsOn6x8",
-        authorization:
-          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV0eHppa3p4bGhhaHNqbmR4emh3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODQ4NjEyMDQsImV4cCI6MjAwMDQzNzIwNH0.joLSoi3-dumg4eyu51wkGb08VMicXLALDHB5QsOn6x8",
+        apikey: `${apikey}`,
+        authorization: `${authorization}`,
       },
     }
   );
