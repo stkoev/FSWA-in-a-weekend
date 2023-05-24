@@ -23,9 +23,9 @@
           <img src="./logo.png" alt="app logo" height="68px" width="68pxs" />
           <h1>Hello World</h1>
         </div>
-        <button class="btn btn-large">Share a fact</button>
+        <button class="btn btn-large btn-open">Share a fact</button>
       </header>
-      <form action="#" class="fact-form">
+      <form action="#" class="fact-form hidden">
         <input type="text" placeholder="Share a fact with the world" />
         <span>200</span>
         <input type="text" placeholder="Trustworthy source" />
@@ -62,7 +62,7 @@
           </ul>
         </aside>
         <section>
-          <ul>
+          <ul class="facts-list">
             <li class="fact">
               <p>
                 React is being developed by Meta (formerly facebook)
@@ -120,5 +120,6 @@
         </section>
       </main>
     </div>
+    <script type="module" src="./script.js"></script>
   </body>
 </html>
